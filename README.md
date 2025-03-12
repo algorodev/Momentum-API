@@ -1,8 +1,8 @@
-# QuestLog API
+# Momentum API
 
 ## Introduction
 
-This API is designed to provide the necessary methods for CRUD operations of **QuestLog**.  
+This API is designed to provide the necessary methods for CRUD operations of **Momentum**.  
 The API is built in Python using Flask.     
 The database is SQLite.
 
