@@ -2,6 +2,7 @@ import express, { Application } from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import connectDB from './config/database'
+import authRoutes from './auth.routes'
 
 dotenv.config()
 
@@ -12,8 +13,6 @@ connectDB().then(() => console.log('Connected to DB.'))
 app.use(cors())
 app.use(express.json())
 
-app.get('/api', (req, res) => {
-	res.send({ message: 'Hello World!' })
-})
+app.use('/api/auth', authRoutes)
 
 export default app
